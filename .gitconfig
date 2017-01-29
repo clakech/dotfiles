@@ -1,0 +1,16 @@
+[http]
+[https]
+[user]
+	name = Cyril Lakech
+	email = cyril.lakech@axa.fr
+[alias]
+	ci = commit
+	st = status
+	br = branch
+	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+	type = cat-file -t
+	dump = cat-file -p
+	co = checkout
+[core]
+	autocrlf = input
+	editor = atom --wait
