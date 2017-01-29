@@ -7,7 +7,7 @@ export ZSH=/Users/cyril.lakech/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-#ZSH_THEME="robbyrussell"
+ZSH_THEME="agnoster"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -29,10 +29,10 @@ export ZSH=/Users/cyril.lakech/.oh-my-zsh
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -52,10 +52,6 @@ export ZSH=/Users/cyril.lakech/.oh-my-zsh
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 
-#ZSH_THEME=pygmalion
-
-ZSH_THEME="agnoster"
-
 plugins=(git colored-man colorize github jira vagrant virtualenv pip python brew osx zsh-syntax-highlighting zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
@@ -72,10 +68,11 @@ DEFAULT_USER=cyril.lakech
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
+export EDITOR="atom -w"
 # else
 #   export EDITOR='mvim'
 # fi
+alias edit="atom -nw"
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -94,6 +91,3 @@ alias ohmyzsh="edit ~/.oh-my-zsh"
 
 export NVM_DIR="/Users/cyril.lakech/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-
-export EDITOR="atom -w"
-alias edit="atom -nw"
