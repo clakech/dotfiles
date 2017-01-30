@@ -12,5 +12,5 @@
 	dump = cat-file -p
 	co = checkout
 [core]
-	autocrlf = input
+	autocrlf = true
 	editor = atom --wait
