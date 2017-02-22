@@ -93,3 +93,6 @@ export NVM_DIR="/Users/cyril.lakech/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
 eval "$(hub alias -s)"
+
+alias 'ON=. proxyON'
+alias 'OFF=. proxyOFF'
