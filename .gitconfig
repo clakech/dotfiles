@@ -13,11 +13,19 @@
 	co = checkout
 [core]
 	autocrlf = input
-	editor = atom --wait
+	editor = code --wait
 	excludesfile = /Users/cyril.lakech/.gitignore_global
+	pager = less -r
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+[branch]
+	# autosetuprebase = always
+	# autosetupmerge = always
+[push]
+	default = simple
+[commit]
+	template = /Users/cyril.lakech/.stCommitMsg

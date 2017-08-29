@@ -68,11 +68,11 @@ DEFAULT_USER=cyril.lakech
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
-export EDITOR="atom -w"
+export EDITOR="code --wait"
 # else
 #   export EDITOR='mvim'
 # fi
-alias edit="atom -nw"
+alias edit="code --wait"
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -96,3 +96,4 @@ eval "$(hub alias -s)"
 
 alias 'ON=. proxyON'
 alias 'OFF=. proxyOFF'
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
